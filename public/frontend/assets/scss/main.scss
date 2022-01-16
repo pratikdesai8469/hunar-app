@@ -1,0 +1,224 @@
+@import "variable";
+
+// importing base css
+@import "base/color";
+
+// importing page css
+@import "page/register";
+@import "page/login";
+@import "page/dashboard";
+@import "page/job";
+@import "page/chat";
+@import "page/network";
+@import "page/profile";
+@import "page/hunor";
+@import "page/editprofile";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    // color: #000;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+select:focus,
+input:focus,
+.form-control:focus,
+button:focus {
+    outline: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+section {
+    padding: 70px 0px;
+}
+
+//common css start
+.form-col {
+    .form-col-box {
+        position: relative;
+    }
+    .form-icon {
+        position: absolute;
+        left: 33px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+
+        svg {
+            color: $color-darkgray;
+            font-size: 18px;
+        }
+        img {
+            width: 20px;
+            object-fit: contain;
+        }
+    }
+    .form-control {
+        padding: 18px 15px 18px 60px;
+        border: transparent;
+        background-color: $color-lightgray;
+        border-radius: 10px;
+        color: $color-gray;
+        font-weight: 500;
+    }
+}
+.form-check-label {
+    font-weight: 400;
+}
+
+.form-check {
+    input {
+        width: 25px;
+        height: 25px;
+        border: transparent;
+        border-radius: 8px !important;
+        background-color: $color-lightgray;
+        margin-right: 10px;
+        vertical-align: bottom !important;
+
+        &:checked {
+            background-color: $color-bottlegreen;
+        }
+
+        &:focus {
+            border-color: none;
+            box-shadow: none;
+        }
+    }
+}
+.form-check-input {
+    margin-top: 0px;
+}
+.form-select{
+    border: transparent;
+    cursor: pointer;
+    padding: 10px 15px;
+    &:focus{
+        box-shadow: none;
+    }
+}
+.basic-input{
+    padding: 10px 15px;
+    border: 1px solid $color-middlegray;
+    &:focus{
+        border-color: $color-middlegray;
+    }
+}
+//common css end
+
+// variables including start
+.btn-base {
+    @include btn-base;
+}
+.btn-bottlegreen {
+    @include btn-bottlegreen;
+}
+.btn-orange{
+    @include btn-orane;
+}
+.font-xs {
+    @include font-xs;
+}
+.font-sm {
+    @include font-sm;
+}
+.font-md {
+    @include font-md;
+}
+.font-lg {
+    @include font-lg;
+}
+.font-xl {
+    @include font-xl;
+}
+.font-xxl{
+    @include font-xxl;
+}
+.font-bold{
+    font-weight: bold;
+}
+// variables including end
+
+
+// text color start
+.text-bottlegreen{
+    color: $color-bottlegreen;
+}
+.text-gray{
+    color: $color-gray;
+}
+.text-middlegray{
+    color: $color-middlegray;
+}
+.text-orange{
+    color: $color-orange;
+}
+// text color end
+
+// border color start
+.border-middlegray{
+    border-color: $color-middlegray;
+}
+.border-lightgray{
+    border-color: $color-lightgray;
+}
+// border color end
+
+// background color start
+.bg-lightgray{
+    background-color:$color-lightgray;
+}
+// background color end
+
+// importing section title
+.sec-title{
+    @include sec-title;
+}

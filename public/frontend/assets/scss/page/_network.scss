@@ -1,0 +1,290 @@
+.main-area {
+  .network-body {
+    height: 75vh;
+    overflow: hidden;
+    .top-bar {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background-image: url(../images/network-search.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 6px;
+
+      .search-bar {
+        width: 67%;
+        position: relative;
+        // display: inline-block;
+        .search-icon {
+          position: absolute;
+          top: 50%;
+          left: 3%;
+          transform: translate(-50%, -50%);
+        }
+        input {
+          width: 100%;
+          border-color: transparent;
+          padding: 10px 15px 10px 40px;
+          border-radius: 6px;
+        }
+      }
+      .navtab-bar {
+        .nav {
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          .nav-link {
+            padding: 10px 35px;
+            background-color: #fff;
+            border-radius: 0;
+            color: #000;
+            &.active {
+              background-color: $color-orange;
+              border-radius: 6px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .top-bar-content{
+        margin-top: 20px;
+        .tab-pane{
+            height: 500px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+        .suggsted-box{
+            background-color: $color-lightgray;
+            padding:20px 5px;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 15px;
+            .sb-profile{
+                img{
+                    width: 65px;
+                    height: 65px;
+                    object-fit: cover;
+                    border-radius: 43%;
+                }
+            }
+            .sb-name{
+                font-weight: 400;
+            }
+            .btn-base{
+                padding: 5px 20px;
+                border-radius: 5px;
+                margin-top: 15px;
+            }
+        }
+        .fb-tab{
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+  }
+}
+
+// reponsive css
+
+@media (max-width: 1580px) {
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1300px) {
+  .main-area {
+    .network-body {
+      .top-bar {
+        .search-bar {
+          width: 65%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .main-area {
+    .network-body {
+      .top-bar {
+        .search-bar {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .main-area {
+    .network-body {
+      .top-bar {
+        .search-bar {
+          width: 55%;
+        }
+        .navtab-bar {
+          .nav {
+            .nav-link {
+              padding: 10px 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 830px) {
+  .main-area {
+    .network-body {
+      .top-bar {
+        .search-bar {
+          width: 52%;
+          .search-icon{
+              left: 5%;
+          }
+        }
+        .navtab-bar {
+          .nav {
+            .nav-link {
+              padding: 10px 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+    .main-area{
+        .network-body{
+            .top-bar{
+                .search-bar{
+                    width: 50%;
+                }
+                .navtab-bar{
+                    .nav{
+                        .nav-link{
+                            padding: 10px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 690px) {
+    .main-area{
+        .network-body{
+            .top-bar{
+                .search-bar{
+                    width: 45%;
+                    .search-icon{
+                        left: 10%;
+                    }
+                }
+                .navtab-bar{
+                    .nav{
+                        .nav-link{
+                            padding: 10px 12px;
+                        }
+                    }
+                }
+            }
+            .top-bar-content{
+                .suggsted-box{
+                    padding: 15px 10px;
+                    .sb-profile{
+                        img{
+                            width: 55px;
+                            height: 55px;
+                        }
+                    }
+                    .btn-base{
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .main-area{
+        .network-body{
+            .top-bar{
+                display: block;
+                .search-bar{
+                    width: auto;
+                    margin-bottom: 10px;
+                    input{
+                        width: 100%;
+                    }
+                    .search-icon{
+                        left: 5%;
+                    }
+                }
+                .navtab-bar{
+                    .nav{
+                        justify-content: center !important;
+                        .nav-link{
+                            padding: 10px 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:475px){
+    .main-area{
+        .network-body{
+            .top-bar{
+                .navtab-bar{
+                    .nav{
+                        .nav-link{
+                            padding: 10px 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:468px){
+    .main-area{
+        .network-body{
+            .top-bar{
+                .navtab-bar{
+                    .nav{
+                        .nav-link{
+                            padding: 10px 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:375px){
+    .main-area{
+        .network-body{
+            .top-bar{
+                .search-bar{
+                    .search-icon{
+                        left: 8%;
+                    }
+                }
+                .navtab-bar{
+                    .nav{
+                        .nav-link{
+                            padding: 8px 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:320px){}

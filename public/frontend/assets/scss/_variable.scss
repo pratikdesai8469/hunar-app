@@ -1,0 +1,89 @@
+$transition: all 0.4s ease 0s;
+
+// btn css start
+@mixin btn-base {
+  padding: 15px 28px;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  transition: $transition;
+  cursor: pointer;
+
+  @media (max-width: 575px) {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@mixin btn-bottlegreen {
+  background-color: $color-bottlegreen;
+
+  &:hover {
+    background-color: rgba(23, 161, 171, 0.8);
+  }
+}
+@mixin btn-orane {
+  background-color: $color-orange;
+
+  &:hover {
+    background-color: rgba(23, 161, 171, 0.8);
+  }
+}
+// btn css end
+
+// font sizes start
+@mixin font-xs {
+  font-size: 12px;
+
+  @media (max-width: 575px) {
+    font-size: 10px;
+  }
+}
+@mixin font-sm {
+  font-size: 14px;
+  @media (max-width: 575px) {
+    font-size: 12px;
+  }
+}
+@mixin font-md {
+  font-size: 16px;
+
+  @media (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+@mixin font-lg {
+  font-size: 18px;
+
+  @media (max-width: 575px) {
+    font-size: 16px;
+  }
+}
+@mixin font-xl {
+  font-size: 20px;
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
+}
+@mixin font-xxl {
+  font-size: 22px;
+
+  @media (max-width: 575px) {
+    font-size: 20px;
+  }
+}
+// font sizes end
+
+// section title starts
+@mixin sec-title {
+  font-size: 20px;
+  font-weight: 600;
+
+  @media (max-width: 992px) {
+    font-size: 18px;
+  }
+}
+// section title ends

@@ -1,0 +1,135 @@
+.header {
+    &.content-header{
+        padding: 8px 0;
+    }
+  .navbar {
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .nav-right {
+        .header-search {
+          position: relative;
+          input {
+            padding: 10px 15px 10px 35px;
+            border-color: $color-lightgray;
+          }
+          .s-icon {
+            position: absolute;
+            top: 50%;
+            left: 8.5%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.job-section {
+  .fs-heading {
+    .fs-profile {
+      .fsp-image {
+        .inner-image {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .job-info {
+    padding: 0 20px 20px 20px;
+    .profession-info {
+      padding: 15px;
+      background-color: $color-lightgray;
+      border-radius: 8px;
+    }
+    .contact-info {
+      margin-top: 20px;
+      .ci-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        .ci-icon {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 100%;
+          background-color: $color-lightblue;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .budget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.main-area {
+  .job-add {
+    padding: 290px 50px;
+  }
+}
+
+// reponsive css starts
+
+@media (max-width: 1580px) {
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .header {
+    .navbar {
+      position: relative;
+      .navbar-collapse {
+        width: 100%;
+        position: absolute;
+        top: 130%;
+        background-color: #fff;
+        z-index: 999;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+      }
+      .navbar-nav {
+        .nav-link {
+          &::after {
+            bottom: -1px;
+          }
+        }
+      }
+    }
+  }
+  .job-section {
+    .job-info {
+      padding: 0 10px 10px 10px;
+      .contact-info {
+        .ci-box {
+          .ci-icon {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin-right: 5px;
+            img {
+              width: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-area {
+    .job-add {
+      padding: 100px 50px;
+    }
+  }
+}

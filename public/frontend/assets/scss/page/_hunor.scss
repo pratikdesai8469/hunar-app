@@ -1,0 +1,132 @@
+.main-area {
+  .hunor-map {
+    height: 545px;
+    position: relative;
+
+    .pd-box-data {
+      transition: all 0.5s ease 0s;
+      &:hover {
+        .hover-box {
+          display: block;
+        }
+      }
+    }
+    .pd-box {
+      position: absolute;
+      transition: all 05s ease 0s;
+
+      &.child-1 {
+        top: 15%;
+        left: 50%;
+      }
+      &.child-2 {
+        top: 50%;
+        left: 50%;
+      }
+      &.child-3 {
+        top: 70%;
+        left: 90%;
+      }
+      &.child-4 {
+        top: 60%;
+        left: 10%;
+      }
+
+      .profile-data {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        // border: solid 3px transparent;
+        // background-image: linear-gradient(#fff, #fff),
+        //   linear-gradient(140deg, #17a1ab, #f07e01);
+        // background-origin: border-box;
+        // background-clip: content-box, border-box;
+        position: relative;
+      }
+      .inner-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: 3px solid #fff;
+        border-radius: 100%;
+        img {
+          width: 35px;
+          height: 35px;
+          border-radius: 100%;
+          object-fit: cover;
+        }
+      }
+      .hover-box {
+        background-color: #fff;
+        padding: 10px 8px;
+        display: inline-block;
+        width: 200px;
+        border-radius: 6px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+        display: none;
+        position: absolute;
+        top: -115px;
+        left: -60px;
+        z-index: 999;
+        transition: all 0.5s ease 0s;
+        .hb-btn {
+          padding: 4px 15px;
+          background-color: $color-bottlegreen;
+          color: #fff;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+  .hunor-categories {
+    .mabc-cat-box {
+      height: 450px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+// responsive css
+
+@media (max-width: 1580px) {
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .main-area{
+    .hunor-map{
+      .pd-box{
+        &.child-3{
+          left: 70%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .main-area {
+    .hunor-categories {
+      .mabc-cat-box {
+        height: 200px;
+      }
+    }
+    .hunor-map {
+      height: 400px;
+      
+      .pd-box{
+        &.child-3{
+          left: 40%;
+        }
+      }
+    }
+  }
+}

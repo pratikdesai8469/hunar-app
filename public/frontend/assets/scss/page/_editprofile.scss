@@ -1,0 +1,56 @@
+.main-area {
+  .setting-wrapper {
+    .ep-box {
+      margin-top: 15px;
+    }
+    .nav {
+      .nav-link {
+        text-align: left;
+        padding: 10px 0px;
+
+        h5 {
+          font-weight: 300;
+        }
+
+        &.active {
+          background-color: transparent;
+          h5 {
+            font-weight: 600;
+            color: $color-darkgray;
+          }
+        }
+      }
+    }
+  }
+}
+
+// responsive design
+
+@media (max-width: 1580px) {
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .main-area {
+    .setting-wrapper {
+        text-align: center;
+      .ep-box {
+        margin-top: 10px;
+        text-align: center;
+      }
+      .nav {
+        .nav-link {
+          padding: 5px 0;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+}
